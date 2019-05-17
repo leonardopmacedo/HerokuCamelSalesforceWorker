@@ -25,10 +25,11 @@ public class MainApp {
 		
 		SalesforceComponent salesforce = new SalesforceComponent();
 		salesforce.setLoginUrl("https://login.salesforce.com");
-		salesforce.setClientSecret("");
-		salesforce.setClientId("");
-		salesforce.setPassword("");
-		salesforce.setUserName("");
+		salesforce.setClientSecret("7E9B1CB83324F8B6F72DF051DC0B7FE5BD689188182D261FB50B1429BC326BC4");
+		salesforce.setClientId("3MVG9uudbyLbNPZNnIi61lPLByYblMWGD7.hcBQ.P7fexnQGroc2ZKRuU4dDKoIi2RpaoNHlJwwQLcyVtZ_wM
+");
+		salesforce.setPassword("fwYH7utx6fwzGnLSRZz6NPKSMGQOKmx7LOYF");
+		salesforce.setUserName("leonardopmacedo@outlook.com");
 		salesforce.setPackages("org.apache.camel.salesforce.dto");
 		
 		context.addComponent("salesforce", salesforce);
@@ -105,7 +106,7 @@ public class MainApp {
 						/*
 						 * Request weather for the Contact location 
 						 * */
-						.toD("weather:get?location=${body.records[0].getMailingCity}&appid=12345")
+						.toD("weather:get?location=${body.records[0].getMailingCity}&appid=dd2e852cc0b1adbf9f9f975f4ff1b50e")
 						
 						
 						/*
@@ -167,7 +168,7 @@ public class MainApp {
 					/*
 					 * Writes message back to user
 					 * */
-					.to("telegram:bots/12345")
+					.to("telegram:bots/823983250:AAEcFgnNwMFfR0ENcVEU46sK11xHpEkzptM")
 				;
 			}
 		});
