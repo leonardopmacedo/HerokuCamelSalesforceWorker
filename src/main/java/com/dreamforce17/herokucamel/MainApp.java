@@ -26,8 +26,7 @@ public class MainApp {
 		SalesforceComponent salesforce = new SalesforceComponent();
 		salesforce.setLoginUrl("https://login.salesforce.com");
 		salesforce.setClientSecret("7E9B1CB83324F8B6F72DF051DC0B7FE5BD689188182D261FB50B1429BC326BC4");
-		salesforce.setClientId("3MVG9uudbyLbNPZNnIi61lPLByYblMWGD7.hcBQ.P7fexnQGroc2ZKRuU4dDKoIi2RpaoNHlJwwQLcyVtZ_wM
-");
+		salesforce.setClientId("3MVG9uudbyLbNPZNnIi61lPLByYblMWGD7.hcBQ.P7fexnQGroc2ZKRuU4dDKoIi2RpaoNHlJwwQLcyVtZ_wM");
 		salesforce.setPassword("fwYH7utx6fwzGnLSRZz6NPKSMGQOKmx7LOYF");
 		salesforce.setUserName("leonardopmacedo@outlook.com");
 		salesforce.setPackages("org.apache.camel.salesforce.dto");
@@ -45,7 +44,7 @@ public class MainApp {
 				/*
 				 * Take incoming message from telegram
 				 * */
-				from("telegram:bots/12345")
+				from("telegram:bots/823983250:AAEcFgnNwMFfR0ENcVEU46sK11xHpEkzptM")
 					
 					/*
 					 * Save text of the message to message header
