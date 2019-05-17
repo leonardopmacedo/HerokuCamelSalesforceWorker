@@ -25,10 +25,10 @@ public class MainApp {
 		
 		SalesforceComponent salesforce = new SalesforceComponent();
 		salesforce.setLoginUrl("https://login.salesforce.com");
-		salesforce.setClientSecret("7E9B1CB83324F8B6F72DF051DC0B7FE5BD689188182D261FB50B1429BC326BC4");
-		salesforce.setClientId("3MVG9uudbyLbNPZNnIi61lPLByYblMWGD7.hcBQ.P7fexnQGroc2ZKRuU4dDKoIi2RpaoNHlJwwQLcyVtZ_wM");
+		salesforce.setClientSecret("0BEF87B9E5D99E46939697FA6CC131EF149BFCFDAC9CD844DC103E29924D02EA");
+		salesforce.setClientId("3MVG9IHf89I1t8hruj9_Wq7V.yLgOnOn8pdNxbZg1Ic3IsVo2_Etzs4zey5sJO73.hL76ESo9shEayR9BpYoz");
 		salesforce.setPassword("fwYH7utx6fwzGnLSRZz6NPKSMGQOKmx7LOYF");
-		salesforce.setUserName("leonardopmacedo@outlook.com");
+		salesforce.setUserName("leonardopmacedo@outlook.com.telegramforsalesforce");
 		salesforce.setPackages("org.apache.camel.salesforce.dto");
 		
 		context.addComponent("salesforce", salesforce);
